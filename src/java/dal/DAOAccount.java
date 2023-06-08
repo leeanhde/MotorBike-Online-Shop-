@@ -5,7 +5,9 @@
 package dal;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import model.Account;
+import model.Product;
 
 /**
  *
@@ -16,7 +18,7 @@ public class DAOAccount extends MyDAO {
     public Account login(String user, String pass) {
 
         try {
-            String sql = "SELECT Id , Username , Password , Email,PhoneNum , RoleID from Account  \n"
+            String sql = "SELECT * from Account\n"
                     + "where Username = ? and Password = ?";
             ps = con.prepareStatement(sql);
             ps.setString(1, user);
@@ -29,8 +31,9 @@ public class DAOAccount extends MyDAO {
                 String password = rs.getString("Password");
                 String email = rs.getString("Email");
                 String phoneNum = rs.getString("PhoneNum");
+                String displayname = rs.getString("Displayname");
 
-                return new Account(userId, userName, password, email, phoneNum);
+                return new Account(userId, userName, password, email, phoneNum, displayname);
             }
         } catch (SQLException e) {
         }
@@ -39,7 +42,6 @@ public class DAOAccount extends MyDAO {
 
     public void change(Account a) {
         xSql = "update Account set password=? where username=?";
-        Account x = null;
         try {
             ps = con.prepareStatement(xSql);
             ps.setString(1, a.getPassword());
@@ -88,4 +90,27 @@ public class DAOAccount extends MyDAO {
         return a;
     }
 
+    public ArrayList<Product> listProduct() {
+        ArrayList<Product> productlist = new ArrayList<>();
+        xSql = "select * from Product";
+        try {
+            ps = con.prepareStatement(xSql);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                Product p = new Product();
+                p.setProductId(rs.getInt("productId"));
+                p.setProductName(rs.getString("ProductName"));
+                p.setDescription(rs.getString("description"));
+                p.setColor(rs.getString("color"));
+                p.setOriginalPrice(rs.getInt("originalPrice"));
+                p.setSellPrice(rs.getInt("sellPrice"));
+                p.setAmount(rs.getInt("amount"));
+                p.setImgLink(rs.getString("imgLink"));
+                productlist.add(p);
+            }
+        } catch (SQLException e) {
+            System.out.println("Product List");
+        }
+        return productlist;
+    }
 }

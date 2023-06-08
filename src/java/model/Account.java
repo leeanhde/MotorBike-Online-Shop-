@@ -14,17 +14,18 @@ public class Account {
     private String password;
     private String email;
     private String phoneNum;
-   
+    private String displayname;
 
-    public Account(int id, String username, String password, String email, String phoneNum) {
+    public Account() {
+    }
+
+    public Account(int id, String username, String password, String email, String phoneNum, String displayname) {
         this.id = id;
         this.username = username;
         this.password = password;
         this.email = email;
         this.phoneNum = phoneNum;
-    }
-
-    public Account() {
+        this.displayname = displayname;
     }
 
     public int getId() {
@@ -66,4 +67,15 @@ public class Account {
     public void setPhoneNum(String phoneNum) {
         this.phoneNum = phoneNum;
     }
+
+    public String getDisplayname() {
+        return displayname;
+    }
+
+    public void setDisplayname(String displayname) {
+        this.displayname = displayname;
+    }
+   
+    
+    
 }
