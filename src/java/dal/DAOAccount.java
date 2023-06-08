@@ -113,4 +113,34 @@ public class DAOAccount extends MyDAO {
         }
         return productlist;
     }
+
+    public Product insertProduct(Product p) {
+        xSql = "INSERT INTO [dbo].[Product]\n"
+                + "           ([ProductID]\n"
+                + "           ,[ProductName]\n"
+                + "           ,[Description]\n"
+                + "           ,[OriginalPrice]\n"
+                + "           ,[SellPrice]\n"
+                + "           ,[CatID]\n"
+                + "           ,[Amount]\n"
+                + "           ,[ImgLink]\n"
+                + "           ,[IdDetail])\n"
+                + "     VALUES\n"
+                + "           ?,\n"
+                + "		   ?,\n"
+                + "		   ?,\n"
+                + "		   ?,\n"
+                + "		   ?,\n"
+                + "		   ?,\n"
+                + "		   ?,\n"
+                + "		   ?,\n"
+                + "		   ?,\n"
+                + "		   ?";
+        try {
+
+        } catch (Exception e) {
+        }
+        return null;
+    }
+
 }
