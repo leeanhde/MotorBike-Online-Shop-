@@ -583,8 +583,8 @@
                                                 </div>
                                             </div>
                                             <div class="product-details">
-                                                <h3 class="product-title"><a href="product-details.html">Donec pede justo fringilla</a></h3>
-                                                <h4 class="product-vendor">Posh Auto Parts</h4>
+                                                <h3 class="product-title"><a href="productdetails.jsp">San Pham 1</a></h3>
+                                                <h4 class="product-vendor">San pham 1</h4>
                                                 <div class="product-starrating">
                                                     <i class="spr-icon fa fa-star"></i>
                                                     <i class="spr-icon fa fa-star"></i>
@@ -1920,51 +1920,6 @@
                 </div>
             </div>
             <!-- End Product Wishlist Added Popup -->
-
-            <!-- Start Newsletter Popup -->
-            <div class="modal fade" id="newsletter-popup" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content border-0">
-                        <div class="modal-body p-0">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="ti-close"></i></button>
-                            <div class="row no-gutters">
-                                <!-- Start Newsletter Content -->
-                                <div class="col-12 col-sm-12 col-md-7 d-flex flex-column justify-content-center text-center">
-                                    <div class="newsletter-details">
-                                        <h2 class="title">Newsletter Signup</h2>
-                                        <p class="sub-title">Receive our latest updates about our latest product  and promotions.</p>
-                                        <form action="#" class="needs-validation" novalidate>
-                                            <div class="input-group">
-                                                <input type="text" class="form-control" placeholder="Enter your email address..." required />                                   
-                                                <button class="btn news-btn" type="submit"><i class="fa fa-long-arrow-right"></i></button>
-                                            </div>
-                                        </form>
-                                        <p class="message">We Promise to Only Send you Good Things!</p>
-                                        <div class="social-media border-0 p-0 m-0">
-                                            <ul class="d-flex flex-row align-items-center justify-content-center text-center">
-                                                <li><a href="#"> <i class="ti-facebook"></i></a></li>
-                                                <li><a href="#"><i class="ti-twitter"></i></a></li>
-                                                <li><a href="#"><i class="ti-youtube"></i></a></li>
-                                                <li><a href="#"><i class="ti-google"></i></a></li>
-                                                <li><a href="#"><i class="ti-linkedin"></i></a></li>
-                                                <li><a href="#"><i class="ti-instagram"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Newsletter Content -->
-                                <!-- Start Newsletter Image -->
-                                <div class="col-12 col-sm-12 col-md-5 text-right d-none d-md-block">
-                                    <img class="img-fluid blur-up lazyload" src="assets/images/others/newsletter.jpg" data-src="assets/images/others/newsletter.jpg" alt="image" title="Newsletter" />
-                                </div>
-                                <!-- End Newsletter Image -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Newsletter Popup -->
-
             <!-- Overlay -->
             <div class="overlay"></div>
 

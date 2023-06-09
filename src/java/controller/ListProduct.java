@@ -10,6 +10,7 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
 import model.Category;
@@ -29,8 +30,9 @@ public class ListProduct extends HttpServlet {
         DAOCategory dbc = new DAOCategory();
         ArrayList<Category> listCate = dbc.listCate();
         
-        request.setAttribute("listP", listP);
-        request.setAttribute("listCate", listCate);
+        HttpSession session = request.getSession();
+        session.setAttribute("listP", listP);
+        session.setAttribute("listCate", listCate);
         request.getRequestDispatcher("listproduct.jsp").forward(request, response);
         
     }

@@ -18,6 +18,7 @@
             <tr>
                 <th>ID</th>
                 <th>Name</th>
+                <th>Category</th>
                 <th>Description</th>
                 <th>Original Price</th>
                 <th>Sell Price</th>
@@ -26,10 +27,15 @@
             </tr>
         </thead>
         <tbody>
-            <c:forEach items="${requestScope.listP}" var="product">
+            <c:forEach items="${sessionScope.listP}" var="product">
             <tr>
                 <td>${product.productId}</td>
                 <td>${product.productName}</td>
+                <td>
+                    <c:forEach items="${sessionScope.listCate}" var="c">
+                        ${c.categoryname}
+                    </c:forEach>
+                </td>
                 <td>${product.description}</td>
                 <td>${product.originalPrice}</td>
                 <td>${product.sellPrice}</td>
