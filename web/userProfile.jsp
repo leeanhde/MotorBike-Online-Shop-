@@ -28,15 +28,6 @@
 
         <!--  Start Main Wrapper -->
         <div class="main-wrapper cart-drawer-push">
-            <!-- Start Promotional Bar Section -->
-            <div class="promotional-bar border-0 rounded-0 d-flex align-items-center alert alert-warning fade show" role="alert">
-                <div class="container-fluid full-promotional-bar">
-                    <span>Shop with discount 50%. Hurry Up! <a href="#">Shop Now</a></span>
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><i class="ti-close"></i></button>
-                </div>
-            </div>
-            <!-- End Promotional Bar Section -->
-
             <!-- Start Header Section -->
             <header class="header bg-white">
                 <div class="container-fluid full-header">
@@ -48,17 +39,8 @@
                                 <a href="#" class="closeNav-btn d-lg-none clearfix" id="closeNav" title="Close"><span class="menu-close mr-2">Close</span><i class="ti-close" aria-hidden="true"></i></a>
                                 <ul class="navbar-nav">
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link" href="home.jsp">Home<span class="arw plush" title="Click to show/hide"></span></a>  
-                                        <!-- Start Megamenu Dropdown -->
-                                        <div class="megamenu submenu dropdown">
-                                            <ul>
-                                                <li><a class="item" href="index.html">Home Version 1</a></li>
-                                                <li><a class="item" href="index-v2.html">Home Version 2</a></li>
-                                                <li><a class="item" href="index-v3.html">Home Version 3</a></li>
-                                                <li><a class="item" href="boxed-layout.html">Boxed Version 4</a></li>
-                                            </ul>
-                                        </div>
-                                        <!-- End Megamenu Dropdown -->
+                                        <a class="nav-link" href="home.jsp">Home</a>  
+                                        
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Feature

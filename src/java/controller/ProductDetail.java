@@ -4,38 +4,26 @@
  */
 package controller;
 
-import dal.DAOAccount;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
-import model.Account;
 
 
 /**
  *
  * @author leede
  */
-@WebServlet(name = "UserProfile", urlPatterns = {"/UserProfile"})
-public class UserProfile extends HttpServlet {
+public class ProductDetail extends HttpServlet {
 
+  
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        int id = Integer.parseInt(request.getParameter("id"));
+        int pid = Integer.parseInt(request.getParameter("pid"));
         
-        DAOAccount db = new DAOAccount();
-        Account a = db.getUserById(id);
-        HttpSession session = request.getSession();
-        if (a != null) {
-            session.setAttribute("profile", a);
-            request.getRequestDispatcher("userProfile.jsp").forward(request, response);
-        } else {
-            response.sendRedirect("error.jsp");
         }
-    }
+    
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**

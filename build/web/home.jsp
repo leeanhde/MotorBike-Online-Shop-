@@ -613,7 +613,7 @@
                                                 </div>
                                                 <div class="product-action">
                                                     <ul>
-                                                        <li class="actions-addcart" data-toggle="tooltip" data-placement="top" title="add to cart"><a href="#open-addtocart-popup" class="btn open-addtocart-popup"><i class="icon ti-shopping-cart"></i></a></li>
+                                                        <li class="actions-addcart" data-toggle="tooltip" data-placement="top" title="add to cart"><a href="addtocart" class="btn open-addtocart-popup"><i class="icon ti-shopping-cart"></i></a></li>
                                                         <li class="actions-quickview" data-toggle="tooltip" data-placement="top" title="quick view"><a href="#open-quickview-popup" class="btn open-quickview-popup"><i class="icon ti-zoom-in"></i></a></li>
                                                         <li class="actions-wishlist" data-toggle="tooltip" data-placement="top" title="add to wishlist"><a href="#open-wishlist-popup" class="btn open-wishlist-popup"><i class="icon ti-heart"></i></a></li>
                                                         <li class="actions-compare" data-toggle="tooltip" data-placement="top" title="add to compare"><a href="compare.html" class="btn"><i class="icon ti-control-shuffle"></i></a></li>
@@ -1772,7 +1772,7 @@
                             </div>
                         </div>
                         <div class="actions d-inline-block w-100 text-center">
-                            <a class="btn btn-primary d-block mb-4 font-sm-14" href="cart.html">View Cart</a>
+                            <a class="btn btn-primary d-block mb-4 font-sm-14" href="viewcart?userid=${sessionScope.profile.id}">View Cart</a>
                             <a class="btn btn-secondary d-block font-sm-14" href="checkout.html">Proceed to checkout</a>
                         </div>
                     </div>
@@ -1795,8 +1795,8 @@
                         </div>
                     </div>
                     <div class="button-action">
-                        <button class="btn btn-secondary btn-block mb-3 continue-shopping close-popup">Continue Shopping</button>
-                        <a href="cart.html" class="btn btn-primary btn-block view-cart">View Cart</a>
+                        <button class="btn btn-secondary btn-block mb-3 continue-shopping close-popup"><a href="home.jsp">Continue Shopping</a></button>
+                        <a href="viewcart?id=1" class="btn btn-primary btn-block view-cart">View Cart</a>
                     </div>
                 </div>
             </div>

@@ -26,14 +26,7 @@
 
         <!--  Start Main Wrapper -->
         <div class="main-wrapper cart-drawer-push">
-            <!-- Start Promotional Bar Section -->
-            <div class="promotional-bar border-0 rounded-0 d-flex align-items-center alert alert-warning fade show" role="alert">
-                <div class="container-fluid full-promotional-bar">
-                    <span>Shop with discount 50%. Hurry Up! <a href="#">Shop Now</a></span>
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><i class="ti-close"></i></button>
-                </div>
-            </div>
-            <!-- End Promotional Bar Section -->
+           
 
             <!-- Start Header Section -->
             <header class="header bg-white">
