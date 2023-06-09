@@ -13,28 +13,26 @@ public class Product {
     private int productId;
     private String ProductName;
     private String description;
-    private String color;
+    private int catID;
     private int originalPrice;
     private int sellPrice;
-    private Category category;
-    private Account seller;
     private int amount;
     private String imgLink;
+    private int IdDetail;
 
     public Product() {
     }
 
-    public Product(int productId, String ProductName, String description, String color, int originalPrice, int sellPrice, Category category, Account seller, int amount, String imgLink) {
+    public Product(int productId, String ProductName, String description, int catID, int originalPrice, int sellPrice, int amount, String imgLink, int IdDetail) {
         this.productId = productId;
         this.ProductName = ProductName;
         this.description = description;
-        this.color = color;
+        this.catID = catID;
         this.originalPrice = originalPrice;
         this.sellPrice = sellPrice;
-        this.category = category;
-        this.seller = seller;
         this.amount = amount;
         this.imgLink = imgLink;
+        this.IdDetail = IdDetail;
     }
 
     public int getProductId() {
@@ -61,12 +59,12 @@ public class Product {
         this.description = description;
     }
 
-    public String getColor() {
-        return color;
+    public int getCatID() {
+        return catID;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setCatID(int catID) {
+        this.catID = catID;
     }
 
     public int getOriginalPrice() {
@@ -85,22 +83,6 @@ public class Product {
         this.sellPrice = sellPrice;
     }
 
-    public Category getCategory() {
-        return category;
-    }
-
-    public void setCategory(Category category) {
-        this.category = category;
-    }
-
-    public Account getSeller() {
-        return seller;
-    }
-
-    public void setSeller(Account seller) {
-        this.seller = seller;
-    }
-
     public int getAmount() {
         return amount;
     }
@@ -117,9 +99,12 @@ public class Product {
         this.imgLink = imgLink;
     }
 
-    @Override
-    public String toString() {
-        return "Product{" + "productId=" + productId + ", ProductName=" + ProductName + ", description=" + description + ", color=" + color + ", originalPrice=" + originalPrice + ", sellPrice=" + sellPrice + ", category=" + category + ", seller=" + seller + ", amount=" + amount + ", imgLink=" + imgLink + '}';
+    public int getIdDetail() {
+        return IdDetail;
+    }
+
+    public void setIdDetail(int IdDetail) {
+        this.IdDetail = IdDetail;
     }
     
     

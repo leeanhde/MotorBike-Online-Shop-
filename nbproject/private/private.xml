@@ -3,11 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/D:/FPT/SWP/SWP_Project/web/listproduct.jsp</file>
+            <file>file:/D:/FPT/SWP/SWP_Project/web/WEB-INF/web.xml</file>
+            <file>file:/D:/FPT/SWP/SWP_Project/src/java/dal/DAOCategory.java</file>
             <file>file:/D:/FPT/SWP/SWP_Project/src/java/model/Product.java</file>
-            <file>file:/D:/FPT/SWP/SWP_Project/src/java/dal/DBContext.java</file>
-            <file>file:/D:/FPT/SWP/SWP_Project/src/java/controller/Login.java</file>
-            <file>file:/D:/FPT/SWP/SWP_Project/src/java/model/Account.java</file>
-            <file>file:/D:/FPT/SWP/SWP_Project/src/java/dal/DAOAccount.java</file>
+            <file>file:/D:/FPT/SWP/SWP_Project/src/java/dal/DAOProduct.java</file>
+            <file>file:/D:/FPT/SWP/SWP_Project/src/java/controller/ListProduct.java</file>
+            <file>file:/D:/FPT/SWP/SWP_Project/src/java/model/Category.java</file>
         </group>
     </open-files>
 </project-private>

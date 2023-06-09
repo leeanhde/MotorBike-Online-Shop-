@@ -12,6 +12,10 @@
         <servlet-name>UpdateProfile</servlet-name>
         <servlet-class>controller.UpdateProfile</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ListProduct</servlet-name>
+        <servlet-class>controller.ListProduct</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SignUp</servlet-name>
         <url-pattern>/SignUp</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>UpdateProfile</servlet-name>
         <url-pattern>/updateProfile</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListProduct</servlet-name>
+        <url-pattern>/listproduct</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

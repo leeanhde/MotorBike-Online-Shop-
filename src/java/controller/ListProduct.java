@@ -4,32 +4,34 @@
  */
 package controller;
 
-import dal.DAOAccount;
+import dal.DAOCategory;
+import dal.DAOProduct;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
+import model.Category;
 import model.Product;
 
 /**
  *
  * @author leede
  */
-@WebServlet(name = "ListProduct", urlPatterns = {"/ListProduct"})
 public class ListProduct extends HttpServlet {
 
-   
+  
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        DAOAccount db = new DAOAccount();
-        ArrayList<Product> listProduct = db.listProduct();
+        DAOProduct db = new DAOProduct();
+        ArrayList<Product> listP = db.listProduct();
+        DAOCategory dbc = new DAOCategory();
+        ArrayList<Category> listCate = dbc.listCate();
         
-        
-        request.setAttribute("listP", listProduct);
-        request.getRequestDispatcher("../listproduct.jsp").forward(request, response);
+        request.setAttribute("listP", listP);
+        request.setAttribute("listCate", listCate);
+        request.getRequestDispatcher("listproduct.jsp").forward(request, response);
         
     }
 
