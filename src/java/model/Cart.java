@@ -2,38 +2,46 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package model;
+package Model;
 
 /**
  *
- * @author leede
+ * @author Tu
  */
 public class Cart {
-    private int cartid;
-    private int userid;
+    
+    private int id;
+    private Users user;
 
     public Cart() {
     }
 
-    public Cart(int cartid, int userid) {
-        this.cartid = cartid;
-        this.userid = userid;
+    public Cart(int id, Users user) {
+        this.id = id;
+        this.user = user;
     }
 
-    public int getCartid() {
-        return cartid;
+    public int getId() {
+        return id;
     }
 
-    public void setCartid(int cartid) {
-        this.cartid = cartid;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public int getUserid() {
-        return userid;
+    public Users getUser() {
+        return user;
     }
 
-    public void setUserid(int userid) {
-        this.userid = userid;
+    public void setUser(Users user) {
+        this.user = user;
     }
+
+    @Override
+    public String toString() {
+        return "Cart{" + "id=" + id + ", user=" + user + '}';
+    }
+
+
     
 }

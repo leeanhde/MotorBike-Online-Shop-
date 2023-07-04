@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package model;
+package Model;
 
 /**
  *
@@ -10,45 +10,91 @@ package model;
  */
 public class Product {
     
-    private int productId;
-    private String ProductName;
+    private int productID;
+    private String productName;
     private String description;
-    private int catID;
+    private String color;
     private int originalPrice;
     private int sellPrice;
+    private int salePercent;
+    private Category category;
+    private Users seller;
     private int amount;
-    private String imgLink;
-    private int IdDetail;
+    private ProductStatus productStatus;
+    private Brand brand;
+    private ProductImg img;
 
     public Product() {
     }
+    
+    public ProductImg getImg() {
+        return img;
+    }
 
-    public Product(int productId, String ProductName, String description, int catID, int originalPrice, int sellPrice, int amount, String imgLink, int IdDetail) {
-        this.productId = productId;
-        this.ProductName = ProductName;
+    public void setImg(ProductImg img) {
+        this.img = img;
+    }
+
+    public Product(int productID) {
+        this.productID = productID;
+    }
+    
+    
+
+    public Product(String productName) {
+        this.productName = productName;
+    }
+    
+    
+
+    public Product(int productID, String productName) {
+        this.productID = productID;
+        this.productName = productName;
+    }
+
+    public Product(int productID, String productName, int sellPrice) {
+        this.productID = productID;
+        this.productName = productName;
+        this.sellPrice = sellPrice;
+    }
+    
+    
+    
+    
+
+    public Product(int productID, String productName, String description, String color, int originalPrice, int sellPrice, int salePercent, Category category, Users seller, int amount, ProductStatus productStatus, Brand brand) {
+        this.productID = productID;
+        this.productName = productName;
         this.description = description;
-        this.catID = catID;
+        this.color = color;
         this.originalPrice = originalPrice;
         this.sellPrice = sellPrice;
+        this.salePercent = salePercent;
+        this.category = category;
+        this.seller = seller;
         this.amount = amount;
-        this.imgLink = imgLink;
-        this.IdDetail = IdDetail;
+        this.productStatus = productStatus;
+        this.brand = brand;
     }
 
-    public int getProductId() {
-        return productId;
+     
+    
+    
+
+    public int getProductID() {
+        return productID;
     }
 
-    public void setProductId(int productId) {
-        this.productId = productId;
+    public void setProductID(int productID) {
+        this.productID = productID;
     }
 
     public String getProductName() {
-        return ProductName;
+        return productName;
     }
 
-    public void setProductName(String ProductName) {
-        this.ProductName = ProductName;
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
     public String getDescription() {
@@ -59,12 +105,12 @@ public class Product {
         this.description = description;
     }
 
-    public int getCatID() {
-        return catID;
+    public String getColor() {
+        return color;
     }
 
-    public void setCatID(int catID) {
-        this.catID = catID;
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public int getOriginalPrice() {
@@ -83,6 +129,30 @@ public class Product {
         this.sellPrice = sellPrice;
     }
 
+    public int getSalePercent() {
+        return salePercent;
+    }
+
+    public void setSalePercent(int salePercent) {
+        this.salePercent = salePercent;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
+    public Users getSeller() {
+        return seller;
+    }
+
+    public void setSeller(Users seller) {
+        this.seller = seller;
+    }
+
     public int getAmount() {
         return amount;
     }
@@ -91,21 +161,28 @@ public class Product {
         this.amount = amount;
     }
 
-    public String getImgLink() {
-        return imgLink;
+    public ProductStatus getProductStatus() {
+        return productStatus;
     }
 
-    public void setImgLink(String imgLink) {
-        this.imgLink = imgLink;
+    public void setProductStatus(ProductStatus productStatus) {
+        this.productStatus = productStatus;
     }
 
-    public int getIdDetail() {
-        return IdDetail;
+    public Brand getBrand() {
+        return brand;
     }
 
-    public void setIdDetail(int IdDetail) {
-        this.IdDetail = IdDetail;
+    public void setBrand(Brand brand) {
+        this.brand = brand;
     }
+
+    @Override
+    public String toString() {
+        return "Product{" + "productID=" + productID + ", productName=" + productName + ", description=" + description + ", color=" + color + ", originalPrice=" + originalPrice + ", sellPrice=" + sellPrice + ", salePercent=" + salePercent + ", category=" + category + ", seller=" + seller + ", amount=" + amount + ", productStatus=" + productStatus + ", brand=" + brand + '}';
+    }
+    
+    
     
     
 }
