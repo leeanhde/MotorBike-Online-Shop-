@@ -38,7 +38,7 @@ public class AdminDashboardServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-         UserDAO ud = new UserDAO();
+        UserDAO ud = new UserDAO();
         ProductDAO pdao = new ProductDAO();
         OrderDAO odao = new OrderDAO();
         OrderProductDAO opdao = new OrderProductDAO();
