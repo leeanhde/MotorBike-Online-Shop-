@@ -223,7 +223,7 @@
                             </aside>
                             <aside class="single_sidebar_widget author_widget">
                                 <img class="author_img rounded-circle" src="img/blog/author.png" alt="">
-                                <h4>ISP392 G1</h4>
+                                <h4>Motorbike</h4>
                                 <div class="social_icon">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
                                     <a href="#"><i class="fa fa-twitter"></i></a>

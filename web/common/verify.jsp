@@ -22,7 +22,7 @@
         <!-- meta character set -->
         <meta charset="UTF-8">
         <!-- Site Title -->
-        <title>Karma Shop</title>
+        <title>MotorBike Shop</title>
 
         <!--
                 CSS

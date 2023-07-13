@@ -23,7 +23,7 @@
         <!-- meta character set -->
         <meta charset="UTF-8">
         <!-- Site Title -->
-        <title>Karma Shop</title>
+        <title>MotorBike Shop</title>
 
         <!--
                 CSS
@@ -62,7 +62,7 @@
                                     <h6 class="mb-2">${sessionScope.user.userName}</h6>
                                     <p class="mb-1">${sessionScope.user.phoneNum}</p>
                                     <p>${sessionScope.user.email}</p>
-                                    <p class="mb-0 text-black font-weight-bold"><a class="primary-btn" href="AddAddress"><i class="icofont-ui-edit"></i> ADD ADDRESS</a></p>
+                                    <p class="mb-0 text-black font-weight-bold"><a class="primary-btn" href="<%=request.getContextPath()%>/address/addaddress.jsp"><i class="icofont-ui-edit"></i> ADD ADDRESS</a></p>
                                 </div>
                             </div>
                         </div>

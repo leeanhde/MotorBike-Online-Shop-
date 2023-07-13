@@ -125,7 +125,7 @@
                                     <div class="col-md-12 mt-5 text-center">
                                         <button class="btn btn-primary" type="submit">Edit</button>
 
-                                        <input class="btn btn-secondary" type="reset" value="Reset">
+                                       
                                     </div>
                                 </div>
                             </div>
