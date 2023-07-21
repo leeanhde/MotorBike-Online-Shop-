@@ -9,7 +9,7 @@ package Model;
  * @author Tu
  */
 public class Product {
-    
+
     private int productID;
     private String productName;
     private String description;
@@ -26,7 +26,7 @@ public class Product {
 
     public Product() {
     }
-    
+
     public ProductImg getImg() {
         return img;
     }
@@ -38,14 +38,10 @@ public class Product {
     public Product(int productID) {
         this.productID = productID;
     }
-    
-    
 
     public Product(String productName) {
         this.productName = productName;
     }
-    
-    
 
     public Product(int productID, String productName) {
         this.productID = productID;
@@ -57,10 +53,6 @@ public class Product {
         this.productName = productName;
         this.sellPrice = sellPrice;
     }
-    
-    
-    
-    
 
     public Product(int productID, String productName, String description, String color, int originalPrice, int sellPrice, int salePercent, Category category, Users seller, int amount, ProductStatus productStatus, Brand brand) {
         this.productID = productID;
@@ -76,10 +68,6 @@ public class Product {
         this.productStatus = productStatus;
         this.brand = brand;
     }
-
-     
-    
-    
 
     public int getProductID() {
         return productID;
@@ -177,12 +165,4 @@ public class Product {
         this.brand = brand;
     }
 
-    @Override
-    public String toString() {
-        return "Product{" + "productID=" + productID + ", productName=" + productName + ", description=" + description + ", color=" + color + ", originalPrice=" + originalPrice + ", sellPrice=" + sellPrice + ", salePercent=" + salePercent + ", category=" + category + ", seller=" + seller + ", amount=" + amount + ", productStatus=" + productStatus + ", brand=" + brand + '}';
-    }
-    
-    
-    
-    
 }

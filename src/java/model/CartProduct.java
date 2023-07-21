@@ -9,7 +9,7 @@ package Model;
  * @author Tu
  */
 public class CartProduct {
-    
+
     private Cart cart;
     private Product product;
     private int amount;
@@ -47,10 +47,4 @@ public class CartProduct {
         this.amount = amount;
     }
 
-    @Override
-    public String toString() {
-        return "CartProduct{" + "cart=" + cart + ", product=" + product + ", amount=" + amount + '}';
-    }
-    
-    
 }
